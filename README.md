@@ -39,7 +39,7 @@
 
 ```java
 FinalDb db = FinalDb.create(this);
-User user = new User(); //这里需要注意的是User对象必须有id属性，或者有通过@ID注解的属性
+User user = new User(); //这里需要注意的是User对象必须有id属性，或者有通过@ID注解的属性:使用注解@Id(column="id")
 user.setEmail("mail@tsz.net");
 user.setName("michael yang");
 db.save(user);
